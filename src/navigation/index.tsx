@@ -1,6 +1,6 @@
 import React from "react";
 import {createStackNavigator} from "@react-navigation/stack";
-import {MapScreen} from "../screens";
+import {LoadingScreen, MapScreen, PermissionsScreen} from "../screens";
 
 const Stack = createStackNavigator();
 
@@ -18,6 +18,8 @@ export const Navigation = () => {
         },
       }}>
       <Stack.Screen name="MapScreen" component={MapScreen} />
+      <Stack.Screen name="PermissionsScreen" component={PermissionsScreen} />
+      <Stack.Screen name="LoadingScreen" component={LoadingScreen} />
     </Stack.Navigator>
   );
 };
